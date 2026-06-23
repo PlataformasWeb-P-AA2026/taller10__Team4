@@ -1,18 +1,18 @@
 from django import forms
-from .models import Parroquia, Barrio, PresidenteBarrio
+from .models import BarrioCiudadela, Parroquia,PresidenteBarrio
 
 class ParroquiaForm(forms.ModelForm):
     class Meta:
         model = Parroquia
-        fields = 'nombre', 'ubicacion', 'tipo'
+        fields = ('nombre', 'ubicacion', 'tipo')
 
 class BarrioForm(forms.ModelForm):
     class Meta:
-        model = Barrio
-        fields = 'nombre', 'numero_viviendas', 'numero_parques', 
-        'numero_edificios_residenciales', 'parroquia'
+        model = BarrioCiudadela
+        fields = ('nombre', 'numero_viviendas', 'numero_parques', 
+        'numero_edificios_residenciales', 'parroquia')
 
 class PresidenteForm(forms.ModelForm):
     class Meta:
         model = PresidenteBarrio
-        fields = 'cedula', 'nickname', 'edad', 'profesion', 'barrio'
+        fields = ('cedula', 'nickname', 'edad', 'profesion', 'barrio')
