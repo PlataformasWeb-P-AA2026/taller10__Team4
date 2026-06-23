@@ -1,5 +1,8 @@
 # taller10
 
+### Integrantes
+Leandro Saquisari - Steven Benavides
+
 Uso de admin y formularios básicos
 
 ====
