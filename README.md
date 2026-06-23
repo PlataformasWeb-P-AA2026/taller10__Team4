@@ -22,6 +22,13 @@ Barrio o Ciudadela:
 - número de edificios residenciales
 - parroquia
 
+Presidente del Barrio
+- cedula
+- nickname
+- edad
+- profesion
+- barrio
+
 Tecnologías y herramientas:
 
 - Base de datos Sqlite
@@ -37,8 +44,8 @@ Tareas:
     entidades creadas en la aplicación
 - Ingresar datos a las entidades.
 - Personalizar el template del admin de Django
-- Generar una vista que liste las parroquias (por cada parroquia sus barrios)
-- Generar una vista que liste los barrios
+- Generar una vista que liste las parroquias (por cada parroquia sus barrios); considerar mostrar el número de parques de cada parroquia, profesiones de los presidentes relacionados
+- Generar una vista que liste los barrios 
 - Generar un formulario que cree una parroquia
 - Generar un formulario que edite una parroquia
 - Generar un formulario que cree un barrio
