@@ -1,0 +1,28 @@
+<h3>Lista de Barrios</h3>
+<ul>
+    {% for e in barrios %}
+
+    <li>
+        {{e}} - [<a href="{% url 'listar_barrios' %}">Lista de Barrios</a>] -
+        [<a href="{% url 'editar_barrio' e.id %}">Editar</a>] 
+
+    </li>
+    {% endfor %}
+</ul>
+
+<br /> 
+[<a href= "{% url 'crear_barrio' %}">Agregar Barrio</a>]
+
+
+<h3>Lista de Parroquias</h3>
+<ul>
+    {% for e in parroquias %}
+    <li>
+        {{e}} - [<a href="{% url 'listar_parroquias' %}">Lista de Parroquias</a>] -
+        [<a href="{% url 'editar_parroquia' e.id %}">Editar</a>] 
+    </li>
+    {% endfor %}
+</ul>
+
+<br /> 
+[<a href= "{% url 'crear_parroquia' %}">Agregar Parroquia</a>]

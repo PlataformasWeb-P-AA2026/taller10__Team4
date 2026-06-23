@@ -1,0 +1,9 @@
+<h3>Crear Barrio</h3>
+<form action="" method="post">
+    {% csrf_token %}
+    {{ formulario.as_p }}
+    <input type="submit" value="Crear Barrio">
+</form>
+
+<br>
+<a href="{% url 'index' %}">Volver al inicio</a>

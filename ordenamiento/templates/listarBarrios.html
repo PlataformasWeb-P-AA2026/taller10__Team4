@@ -1,0 +1,7 @@
+<h3>Lista de Barrios</h3>
+<ul>
+    {% for e in barrios %}
+        <li>{{ e.nombre }}</li>
+    {% endfor %}
+</ul>   
+<a href="{% url 'index' %}">Volver al inicio</a>
