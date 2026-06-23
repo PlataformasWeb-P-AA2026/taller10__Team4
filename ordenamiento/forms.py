@@ -12,7 +12,3 @@ class BarrioForm(forms.ModelForm):
         fields = ('nombre', 'numero_viviendas', 'numero_parques', 
         'numero_edificios_residenciales', 'parroquia')
 
-class PresidenteForm(forms.ModelForm):
-    class Meta:
-        model = PresidenteBarrio
-        fields = ('cedula', 'nickname', 'edad', 'profesion', 'barrio')
